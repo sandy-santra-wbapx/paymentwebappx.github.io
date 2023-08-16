@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyament</title>
+    <link rel="stylesheet" href="payment.css">
+    
+</head>
+
+<body onload="showTime()">
+
+    <div class="container">
+        <div class="container-heading">
+            <h2>Welcome to the payment page of <span class="PYQ Platfrom">PYQ Platfrom</span><br></h2>
+
+            <form>
+                <div class="name">
+                    <label>Your name<br></label>
+                    <input type="text" name="your name" placeholder="Enter your name" id="name" required>
+                </div>
+                <div class="modeofpayment">
+                    <label>Choose your payment mode<br></label>
+                    <input type="checkbox" name="Online" id="payment mode online">
+                    <label>Online <br></label>
+                    <input type="checkbox" name="Cash" id="payment mode cash">
+                    <label>Cash</label>
+                </div>
+                <div class="cardtype">
+                    <label> Choose your card type<br></label>
+                    <select id="cardtype" name="cardtype">
+
+                        <option value="Rupay">Rupay</option>
+                        <option value="Platinum">Platinum</option>
+                        <option value="Master card">Master card</option>
+                        <option value="Visa">Visa</option>
+                        <option value="Rupay">Rupay</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                </div>
+        </div>
+        <div class="carddetilas">
+            <label>Enter your card details <br></label>
+            <input type="text" name="card number" placeholder="1234-5678-9999" id="card_number" required>
+        </div>
+        <div class="cvv">
+            <label>Enter your card CVV <br>
+            </label>
+            <input type="text" name="Enter your card cvv" placeholder="000" id="card_cvv" required>
+        </div>
+        <div class="expiry">
+            <label>Enter your card expiry date<br></label>
+            <input type="date" name="expiry date" placeholder="dd-mm-yyyy" id="expirey_date" required>
+
+        </div>
+        <div class="payment_proff">
+            <label>
+                Please upload the payment proff (*jpg,*jpeg,*pdf,*png format)
+                <br>
+                <br>
+            </label>
+        </div>
+        <div class="upload files">
+
+
+            <input type="file" name="payment_proff" value="Click here to upload the flie" id="proof" >
+        </div>
+        <br>
+        <div class="submit-container">
+            <input type="submit" value="Click here to submit" onclick="popconfirm()" id="submit">
+
+            <div class="time">
+                <h1>Current time<p></p>
+                </h1>
+
+            </div>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<script src="payment.js">
+    
+</script>
